@@ -1,8 +1,71 @@
 body{
+	/*background-color: #93c1db;*/
+	background: #93c1db; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top,#27AECC,#fff); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom right,#27AECC,#fff); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom right,#27AECC,#fff); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom right,#27AECC,#fff); /*Standard*/
 	font-family: 'Lato', sans-serif;
 }
 img{
 	max-width: 100%;
+}
+h1{
+	color: #000099;
+	text-shadow: 2px 2px 5px white;
+}
+h2{
+	color: #009933;
+}
+h3{
+	color: #27AE43;
+}
+p{
+	/*color: #00b095;*/
+	color: #27AE43;
+	font-size: 1.5em;
+}
+a{
+	color: #009933;
+}
+nav ul li{
+	font-size: 1.5em;
+	color: #FFF;
+	display: inline-block;
+	margin-right: 10px;
+	padding: 5px;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-e-transition: all 0.5s linear;
+}
+nav ul li a:hover{
+	background: #4BAE7C;
+	color: #FFF;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 0.5s linear;
+	-webkit-transition: all 0.5s linear;
+	-moz-transition: all 0.5s linear;
+	-e-transition: all 0.5s linear;
+	font-size: 1em;
+	padding: 5px;
+	box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+nav ul li a{
+	text-decoration: none;
+	color: #fff;
+}
+
+.retraso-1{
+	animation-delay:1s;
+}
+.retraso-2{
+	animation-delay:2s;
+}
+.sombra{
+	box-shadow: 0 0 0px 20px rgba(0, 0, 0, 0.7);
 }
 .quitar-float{
 	float: none;
@@ -17,14 +80,12 @@ img{
 	font-size: 4em;
 }
 .azul{
-	color: #3F528C;
+	color: #406AEB;
 }
 .espacio-derecha{
 	margin-right: 1em;
 }
-a{
-	color: #6B8CF2;
-}
+
 .inline-block{
 	float: none;
 	display: inline-block;
@@ -38,8 +99,23 @@ a{
 	list-style-type: none;
 }
 .se-gris{
-	background-color: #eee;
+	background-color: #5A707F;
 }
 .padding-largo{
 	padding: 5px 10px;
+}
+#enlace{
+	padding: 1em 3em;
+ 	margin: 1em 25%;
+}
+#enlace a{
+	display: inline-block;
+	margin: 0 auto;
+}
+#grad {
+  background: red; /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left,rgba(255,0,0,0),rgba(255,0,0,1)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(right,rgba(255,0,0,0),rgba(255,0,0,1)); /*Fx 3.6-15*/
+  background: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1)); /*Standard*/
 }
